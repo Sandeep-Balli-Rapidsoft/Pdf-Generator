@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+	display: block;
+}
+
+.textColor {
+	color: #a8bbf8;
+}
+
+h2 {
+	width: 100%;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h2>PDF</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<label>Name:</label>
+				<div class="textColor">
+					<p th:text="name" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label>Email:</label>
+				<div class="textColor">
+					<p th:text="${email}" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label>Address:</label>
+				<div class="textColor">
+					<p th:text="${address}" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<h4>Note: Along with the ticket bring Primary Passenger's Id
+		Proof.</h4>
+</body>
+</html>
